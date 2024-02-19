@@ -1,0 +1,275 @@
+body {
+    height: auto;
+}
+.header-main {
+    min-height: 67vh;
+    position: relative;
+    background-image: url(../img/coverI.jpg);
+    background-position: center right;
+    background-size: cover;
+    border-bottom: 10px solid rgba(59, 0, 115, 1);
+    padding: 0 1rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 0;
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.columns {
+    grid-column: span 12;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    min-width: 0;
+}
+
+.mobile-header-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0 14px;
+}
+
+.logo-img {
+    margin-top: 2rem;
+}
+.nav-button {
+    background: none;
+    border: none;
+}
+
+.nav-button span {
+    color: white;
+    font-size: 32px;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Icons'; 
+    font-size: 24px; 
+    padding-right: 8px;
+}
+
+#product-main {
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(3,3rem);
+}
+
+.search-transparent {
+    display: block;
+    max-width: 430px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.search-wrapper {
+    padding: 20px 0 15px;
+}
+
+.search-wrapper form {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+
+& input {
+    line-height: 1.3;
+    border: none;
+    width: calc(100% - 60px);
+    padding: 22px 0 22px 22px;
+    border-radius: 3px;
+    margin-top: 0;
+    outline: none;
+    border-radius: 8px;
+}
+
+& .search-btn {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    border: none;
+    background-color: white;
+    align-items: center;
+    border-radius: 8px;
+}
+}
+
+.search-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+& a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    gap: 8px;
+}
+
+}
+
+#date-input {
+    background: none;
+    border: none;
+    color: white;
+    width: 61%;
+    text-align: center;
+}
+
+#ui-datepicker-div {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.ui-datepicker-next {
+    margin-left: 6rem;
+    font-weight: 300;
+}
+.calender-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#product-title {
+    width: auto;
+    background-color: rgba(238, 238, 238, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+        color: rgba(59, 0, 115, 1);
+        text-decoration: none;
+    }
+}
+
+.btn {
+    background: none;
+    border: none;
+}
+ 
+.btn:hover {
+    background: none;
+}
+
+#offcanvasExample {
+    height: 19rem;
+    border-radius: 0 0 8px 8px;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: black;
+}
+
+/* constraction page */
+#constraction-main {
+    height: auto;
+}
+
+.constraction-wrapper {
+    background: none;
+    border: none;
+}
+
+.constraction-contain {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 0;
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & a {
+        grid-area: 1/1/1/2;
+        text-decoration: none;
+    }
+    & h3 {
+        grid-area: 1/3/2/12;
+        color: rgba(59, 0, 115, 1);
+  }
+}
+
+#back-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+#back-icon {
+    display: flex;
+    align-items: center;
+}
+
+.search-constt,
+.search-constt  button,
+.search-constt input {
+    background-color: rgba(238, 238, 238, 1);
+    border: none;
+    border-radius: 5px;
+}
+
+.search-constt {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5px;
+    height: 42px;
+}
+
+.calender-location-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 11px 0px 4px;
+}
+
+#constraction-list {
+    color: black;
+}
+
+#constraction-ul {
+    height: 40rem;
+}
+
+/* spikpistol page */
+.first-product {
+    height: 25rem;
+    background-image: url(../img/productI.jpg);
+    background-position: center right;
+    background-size: cover;
+}
+
+#product-detail {
+    position: relative;
+}
+
+.owner-name {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 21rem;
+    background-color: #f1f1f1;
+}
+
+.owner-name-detail li {
+    list-style: none;
+}
+
+.first-product span{
+    display: flex;
+    align-items: center;
+}

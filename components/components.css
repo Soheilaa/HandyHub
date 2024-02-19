@@ -1,18 +1,26 @@
+
+
 .logo {
     width: 83px;
     height: 83px;
+    border-radius: 125px;
 }
 
 .header {
     font-size: 48px;
+    color: white;
+    padding-left: 1rem;
 }
 
 .headerII {
     font-size: 30px;
+    color: white;
+    text-align: center;
 }
 
 .headerIII {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .categories-list {
@@ -38,10 +46,9 @@
 .product-categories {
     list-style: none;
     padding: 0;
-    margin-left: 10px;
-    width: 430px;
+    width: auto;
     background-color: rgba(238, 238, 238, 1);
-    height: 52px;
+    height: 23.3rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -52,13 +59,15 @@
     border-bottom: 1px solid white;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 52px;
 }
 
 .product-categories li a {
     text-decoration:none;
     color: black;
-    padding-left: 1rem;
+    padding-left: 3rem;
     font-size: 15px;
     font-family: inherit;
     display: flex;
@@ -67,7 +76,12 @@
 
 .product-categories li a span {
     position: absolute;
-    margin-left: 24rem;
+    margin-left: -2rem;
+    color: rgba(59, 0, 115, 1);
+}
+
+.product-categories li a {
+    color: rgba(59, 0, 115, 1);
 }
 
 .search-input {
@@ -116,5 +130,79 @@
 
   .calender-content, .location-content{
     text-decoration: none;
+    color: black;
+  }
+
+  .product-list {
+    display: flex;
+  }
+  .productI_row {
+    height: 122px;
+    width: 113px;
+  }
+
+  .product-wrapper {
+    display: block;
+  }
+
+  .product-wrapper ul {
+    margin-left: -40px;
+    background-color: rgb(238, 238, 238);
+  }
+
+  .product-wrapper ul li {
+    list-style: none;
+    padding-top: 1rem;
+    border-bottom: 2px solid white;
+  }
+
+  .product-item {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(6,21px);
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .product-item-col {
+    grid-area: 4/1/5/2;
+    margin-left: 7px;
+  }
+
+  .product-item a h2 {
+    font-size: 19px;
+    color: black;
+  }
+
+  .product-item a {
+    text-decoration: none;
+    grid-area: 1/1/2/2;
+  }
+
+  .product-loc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: 3/1/4/2;
+  }
+
+  .product-loc p {
+    font-size: 18px;
+  }
+
+  .product-heart {
+    grid-area: 6/1/7/2;
+  }
+  .product-heart a {
+    text-decoration: none;
+    color: rgba(255, 83, 83, 1);
+  }
+
+  .product-owner-profile {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .product-owner-profile a span {
     color: black;
   }
