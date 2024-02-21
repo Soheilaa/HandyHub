@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="../components/components.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- styles -->
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <!--icons  -->
+    <!-- bootsrap -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+     <!--bootsrap-->
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="signup-header">
+            <h3 class="headerIII">Create an account</h3>
+            <button class="nav-button btn btn-primary" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <!-- sidebar menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            Rent out
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            Tha’s how HandyHub works
+                        </a>
+                     </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            Login
+                        </a>
+                    </li>
+                    <li class="list-group-item">Singup</li>
+                    <!-- Add more menu items as needed -->
+                  </ul>
+                </div>
+            </div>
+            <!-- sidebar menu -->
+        </div>
+        <div class="account-pic">
+            <span class="material-symbols-outlined">account_circle</span>
+            <p>All users must have a profile picture</p>
+        </div>
+    </header>
+    <main>
+        <div class="singup-wrapper">
+            <div class="login-container">
+                <div class="login-input-btn">
+                    <label>Full name</label>
+                </div>
+                <div class="login-input-btn">
+                    <input id="name-input" type="name">
+                </div>
+            </div>
+
+            <div class="login-container">
+                <div class="login-input-btn">
+                    <label>E-mail</label>
+                </div>
+                <div class="login-input-btn">
+                    <input id="name-input" type="email">
+                </div>
+            </div>
+
+            <div class="login-container">
+                <div class="login-input-btn">
+                    <label>Phone number</label>
+                </div>
+                <div class="login-input-btn">
+                    <input id="name-input" type="number">
+                </div>
+            </div>
+
+            <div class="login-container">
+                <div class="login-input-btn">
+                    <label>How did you find HandyHub?</label>
+                </div>
+                <div class="login-input-btn">
+                    <input id="name-input" type="number">
+                </div>
+            </div>
+
+            <div class="question">
+                <p>What is your favorite color?</p>
+                <label>
+                  <input type="checkbox" name="color" value="blue">
+                  Rent from others
+                </label>
+                <label>
+                  <input type="checkbox" name="color" value="red">
+                  Rent out my things
+                </label>
+                <label>
+                  <input type="checkbox" name="color" value="green">
+                  Both rent and lease
+                </label>
+              </div>
+              <section class="singup-btns">
+                <a id="signup-create" href="#">Create a new profile</a>
+                <a id="signup-close" href="#">Close</a>
+              </section>
+             
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+    <!-- bootsrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- bootsrap -->
+</body>
+</html>
