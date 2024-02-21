@@ -15,7 +15,7 @@
     <header id="product-detail">
         <div class="first-product">
                 <a href="alladslist.html">
-                    <span class="material-symbols-outlined">close</span>
+                    <span id="first-pro-close" class="material-symbols-outlined">close</span>
                 </a>
                 <div class="owner-name">
                     <span class="material-symbols-outlined">person</span>
@@ -97,11 +97,29 @@
                 <span class="material-symbols-outlined">calendar_month</span>
                 MAKE A REQUEST
             </label>
-
-            <label id="chat-btn"> 
+           
+            <label id="chat-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
                 <span class="material-symbols-outlined">chat</span>
                 CHAT WITH THE RENTER 
-            </label>   
+            </label>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content" id="modal-container">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Chat with the renter </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" id="modal-chat-btn" placeholder="Message to the vendor">
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" id="send-btn" class="btn btn-secondary send-req-btn" data-bs-dismiss="modal">Send request</button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
           
     </footer>
@@ -122,14 +140,18 @@
                             <ul class="dropdown-menu" aria-labelledby="monthDropdown">
                               <li><a class="dropdown-item" href="#" data-month="1">January</a></li>
                               <li><a class="dropdown-item" href="#" data-month="2">February</a></li>
+                              <li><a class="dropdown-item" href="#" data-month="2">March</a></li>
+                              <li><a class="dropdown-item" href="#" data-month="2">April</a></li>
                               <!-- Add other months here -->
                             </ul>
                           </div>
                           <div class="input-group-prepend">
                             <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="yearDropdown" data-bs-toggle="dropdown" aria-expanded="false">Year</button>
                             <ul class="dropdown-menu" aria-labelledby="yearDropdown">
-                              <li><a class="dropdown-item" href="#" data-year="2022">2022</a></li>
+                              <li><a class="dropdown-item" href="#" data-year="2022">2024</a></li>
                               <li><a class="dropdown-item" href="#" data-year="2023">2023</a></li>
+                              <li><a class="dropdown-item" href="#" data-year="2023">2022</a></li>
+                              <li><a class="dropdown-item" href="#" data-year="2023">2021</a></li>
                               <!-- Add other years here -->
                             </ul>
                           </div>
@@ -170,7 +192,7 @@
       </div>
 
 <script src="index.js"></script>
-    <!-- Bootstrap JS -->
+<!-- Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
