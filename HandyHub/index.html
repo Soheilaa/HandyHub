@@ -19,7 +19,7 @@
         <div class="row">
             <div class="columns">
                 <div class="mobile-header-inner">
-                    <button class="nav-button btn btn-primary" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <button id="orders-menu-btn" class="nav-button btn btn-primary" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <span class="material-symbols-outlined">menu</span>
                     </button>
                     <!-- sidebar menu -->
@@ -31,12 +31,17 @@
                         <div class="offcanvas-body">
                           <ul class="list-group">
                             <li class="list-group-item">
+                                <a href="categories.html">
+                                    Categories
+                                </a>
+                            </li>
+                            <li class="list-group-item">
                                 <a href="#">
                                     Rent out
                                 </a>
                             </li>
                             <li class="list-group-item">
-                                <a href="#">
+                                <a href="aboutHandyHub.html">
                                     That's how HandyHub works
                                 </a>
                              </li>
@@ -46,12 +51,11 @@
                                 </a>
                             </li>
                             <li class="list-group-item">
-                                <a href="#">
+                                <a href="loginPage.html">
                                     Login
                                 </a>
                             </li>
                             <li class="list-group-item">Singup</li>
-                            <!-- Add more menu items as needed -->
                           </ul>
                         </div>
                     </div>
@@ -88,8 +92,8 @@
                         <span class="material-symbols-outlined">location_searching</span>
                         <span>Near You</span>
                     </a>
-                    <a class="headerIII calender-btn" href="#">
-                        <input type="date" class="headerIII" id="date-input" placeholder ="Select lend period" name="date">
+                    <a class="calender-btn" href="#">
+                        <input type="date" id="date-input" placeholder ="Select lend period" name="date">
                     </a>
                 </div>
             </div>
@@ -98,7 +102,7 @@
     <main id="product-main">
         <div id="product-title">
             <a href="categories.html" class="headerIII">
-                Or browser our most popular categories...
+                Or browser our most popular Categories
             </a>
         </div>
         <ul class="product-categories">
