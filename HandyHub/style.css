@@ -174,7 +174,7 @@ body {
 }
 
 #offcanvasExample {
-    height: 19rem;
+    height: 22rem;
     border-radius: 0 0 8px 8px;
 }
 
@@ -395,7 +395,7 @@ body {
         color: white;
         border: none;
     }
-    
+
     & #chat-btn {
     background-color: rgba(59, 0, 115, 1);
     }
@@ -437,6 +437,7 @@ body {
 
 #send-btn {
     background-color: rgba(88, 125, 113, 1);
+    border: none;
 }
 
 #calendarContainer {
@@ -743,3 +744,14 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  #categories-title {
+    background-color: rgba(59, 0, 115, 1);
+
+    & a {
+        font-weight: bold;
+        color: white;
+    }
+  }
+
+ 

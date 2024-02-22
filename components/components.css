@@ -19,7 +19,7 @@
 }
 
 .headerIII {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -31,6 +31,9 @@
     width: 430px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer span {
